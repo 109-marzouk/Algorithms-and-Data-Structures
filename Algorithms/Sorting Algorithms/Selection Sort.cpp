@@ -3,7 +3,7 @@
 * -------------------------
 * Selection Sort Algorithm:
 * -------------------------
-* Time Complixty: O(N^2)
+* Worst Case Time Complixty: O(N^2)
 * Space Complixty: O(1)
 */
 
