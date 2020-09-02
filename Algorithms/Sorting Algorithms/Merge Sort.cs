@@ -1,3 +1,12 @@
+/*
+* Author: Mohamed Marzouk
+* -------------------------
+* Bubble Sort Algorithm:
+* -------------------------
+* Worst Case Time Complixty: O(N . log(N))
+* Space Complixty: N + log(N) => O(N)
+* Used Language: C#
+*/
 using System;
 
 class MainClass {
