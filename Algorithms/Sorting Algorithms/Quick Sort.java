@@ -27,7 +27,7 @@ public class Main {
   			int t = arr[start];
   			arr[start] = arr[partitionIndex];
   			arr[partitionIndex++] = t;
-      }
+		}
     }
     int t2 = arr[partitionIndex];
     arr[partitionIndex] = arr[end];
@@ -45,7 +45,7 @@ public class Main {
 
   public static void main( String args[] ) {
     int arr[] = {10, 7, 8, 9, 1, 5, 1};
-    int n = arr.length; 
+    int n = arr.length;
     quickSort(arr, 0, n-1);
     for(int i = 0; i < n; i++) System.out.print(arr[i] + " ");
   }
