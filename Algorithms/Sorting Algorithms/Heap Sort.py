@@ -7,3 +7,9 @@
 * Space Complixty: O(1)
 * Used Language: Python
 """
+
+def heapfiy(arr, i):
+    return
+
+def heapSort(arr):
+    return
