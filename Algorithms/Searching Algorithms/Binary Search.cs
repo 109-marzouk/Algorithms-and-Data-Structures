@@ -10,7 +10,7 @@
 
 using System;
 class MainClass {
-  public static int BinarySearch(int[] arr, int start, int end, int target){
+  public static int RecursiveBinarySearch(int[] arr, int start, int end, int target){
     // this fuction return the target's index if it exists.
     if(end >= start){
       int mid = (start + end) / 2;
@@ -21,8 +21,18 @@ class MainClass {
     // return -1 if the target dosn't exist.
     return -1;
   }
+  public static int IterativeBinarySearch(int[] arr, int start, int end, int target){
+    while(end >= start){
+      int mid = (start + end) / 2;
+      if(arr[mid] == target) return mid;
+      else if(arr[mid] < target) start = mid + 1;
+      else end = mid - 1;
+    }
+    return -1;
+  }
   public static void Main (string[] args) {
-    int[] arr = {5, 2, 3, 1};
-    Console.WriteLine (BinarySearch(arr, 0, arr.Length - 1, 1));
+    int[] arr = {1, 2, 5, 10};
+    Console.WriteLine(RecursiveBinarySearch(arr, 0, arr.Length - 1, 10));
+    Console.WriteLine(IterativeBinarySearch(arr, 0, arr.Length - 1, 5));
   }
 }
