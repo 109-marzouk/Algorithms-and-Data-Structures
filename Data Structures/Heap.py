@@ -11,6 +11,7 @@ def heapify(arr, size, i):
     arr[i], arr[smallest] = arr[smallest], arr[i] # Swapping
     heapify(arr, size, smallest)
 
+# TODO: here is a bug
 def insert(arr, num):
   size = len(arr)
   arr.append(num)
