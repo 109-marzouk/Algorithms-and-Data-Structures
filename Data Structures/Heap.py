@@ -11,22 +11,20 @@ def heapify(arr, size, i):
     arr[i], arr[smallest] = arr[smallest], arr[i] # Swapping
     heapify(arr, size, smallest)
 
-# TODO: here is a bug
 def insert(arr, num):
   size = len(arr)
   arr.append(num)
   if size != 0:
-    for i in range((size // 2) - 1, -1, -1):
-      heapify(arr, size, i)
+    for i in range(((len(arr) - 1) // 2), -1, -1):
+      heapify(arr, len(arr), i)
 
 def deleteNode(arr, num):
   size = len(arr)
-  i = 0
   for i in range(0, size):
     if arr[i] == num: break
   arr[i], arr[size - 1] = arr[size - 1], arr[i]
-  arr.remove(size - 1)
-  for i in range((len(arr) // 2) - 1, -1, -1):
+  arr.remove(arr[size - 1])
+  for i in range(((len(arr) - 1) // 2), -1, -1):
     heapify(arr, len(arr), i)
 
 arr = []
@@ -44,7 +42,14 @@ print ("Min-Heap array: " + str(arr))
    3   9
   /\
  5  4
-
 """
-deleteNode(arr, 4)
+
+deleteNode(arr, 2)
 print("After deleting an element: " + str(arr))
+"""
+     3
+    / \
+   4   9
+  /
+ 5
+"""
