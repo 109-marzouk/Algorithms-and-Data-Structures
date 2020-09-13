@@ -6,7 +6,7 @@
 * Notice:
     * Binary Heaps are not the only way to implement Priority Queue.
     * We can implement Priority Queue with heaps [Binary / Fibonacci / Binomial / Parirng / etc..] to get the best time complexity.
-    * We could also implement it with unsorted list but this way would not give the best time complexity.
+    * We could also implement it with unsorted list but this way would not give us the best time complexity.
 * Time Complixty [Binary Heap]:
     * Building: O(N)
     * Inserting: O(log(N))
