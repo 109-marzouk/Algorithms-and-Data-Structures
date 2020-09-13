@@ -1,3 +1,16 @@
+"""
+* Author: Mohamed Marzouk
+* -------------------------------------
+* Binary Heap Data Structure (Min Heap)
+* -------------------------------------
+* Time Complixty:
+    * Building: O(N)
+    * Inserting: O(log(N))
+    * Peaking [first element]: Big Theta(1)
+    * Polling [delete]: Big Theta(log(N))
+    * Merging: Big Theta(N)
+* Used Language: Python
+"""
 def heapify(arr, size, i):
   smallest = i;
   left = 2 * i + 1;
