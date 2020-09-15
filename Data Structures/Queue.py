@@ -1,8 +1,8 @@
 """
 * Author: Mohamed Marzouk
-* ----------------------------------------
+* -----------------------
 * Queue:
-* ----------------------------------------
+* -----------------------
 * Time Complixty: O(1)
 * Space Complixty: O(N)
 * Used Language: Python
