@@ -14,5 +14,10 @@
     * Polling [delete]: Big Theta(log(N))
     * Merging: Big Theta(N)
 * Used Language: Python
+* Usage:
+    * Dijkstra's algorithm
+    * for implementing stack
+    * for load balancing and interrupt handling in an operating system
+    * for data compression in Huffman code
 # Binary Heaps [Min Heap] Implementation Link: https://github.com/MohamedMarzouk23/Algorithms-and-Data-Structures/blob/master/Data%20Structures/Heap.py
 """

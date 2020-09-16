@@ -10,6 +10,10 @@
     * Polling [delete]: Big Theta(log(N))
     * Merging: Big Theta(N)
 * Used Language: Python
+* Usage:
+    * Heap is used while implementing a priority queue.
+    * Dijkstra’s Algorithm
+    * Heap Sort
 """
 def heapify(arr, size, i):
   smallest = i;
