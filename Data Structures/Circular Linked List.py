@@ -31,9 +31,9 @@ class CircularLinkedList:
       self.head = self.tail = newNode
       newNode.next = self.head
   def display(self):
-    current = self.head;
+    current = self.head
     if self.head is None:
-      print("List is empty");
+      print("List is empty")
       return;
     else:
       print("Nodes of the circular linked list: ");
