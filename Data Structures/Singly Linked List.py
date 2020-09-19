@@ -23,12 +23,15 @@ class Node:
 
 class SinglyLinkedList:
     def __init__(self):
-        self.head = None
+        self.head = self.tail = None
+        self.size = 0
 
+    def __len__(self): return self.size
     def insertAtBeginning(self, data):
         newNode = Node(data)
         newNode.next = self.head
         self.head = newNode
+        self.size += 1
 
     def insertAfter(self, node, data):
         if node is None:
@@ -37,18 +40,22 @@ class SinglyLinkedList:
         newNode = Node(data)
         newNode.next = node.next
         node.next = newNode
+        self.size += 1
 
     def insertAtEnd(self, data):
         newNode = Node(data)
         if self.head is None:
             self.head = newNode
+            self.head.next = self.tail
             return
-        lastNode = self.head
-        while lastNode.next():
-            lastNode = lastNode.next
-        lastNode.next = newNode
+        self.tail.next = newNode
+        self.tail = newNode
+        self.size += 1
 
-    def deleteAt(self, pos):
+    def deleteAtBeginning(self):
+        self.head = self.head.next
+
+    def deleteAt(self, pos = self.size - 1):
         if self.head is None: return
         tempNode = self.head
         for i in range(pos - 1):
