@@ -4,9 +4,11 @@
 * Singly Linked List
 * ------------------------
 * Time Complixty:
-  * Search: O(N)
-  * Insert: O(N) [Except Insertion At Beginning: O(1)]
-  * Deletion: O(N)
+    * Search: O(N)
+    * Insert at Head/Tail: O(1)
+    * Insert at Pos: O(N)
+    * Deletion Head/Tail: O(1)
+    * Deletion [middle / pos]: O(N)
 * Space Complixty: O(N)
 * Used Language: Python
 * Usage:

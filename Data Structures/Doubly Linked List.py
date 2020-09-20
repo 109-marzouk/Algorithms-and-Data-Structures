@@ -5,8 +5,10 @@
 * ------------------------
 * Time Complixty:
     * Search: O(N)
-    * Insert: O(1)
-    * Deletion: O(1)
+    * Insert at Head/Tail: O(1)
+    * Insert at Pos: O(N)
+    * Deletion Head/Tail: O(1)
+    * Deletion [middle / pos]: O(N)
 * Space Complixty: O(N)
 * Used Language: Python
 """
