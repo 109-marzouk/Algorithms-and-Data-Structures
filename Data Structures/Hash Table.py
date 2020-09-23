@@ -9,6 +9,11 @@
     * Search, Insert and Delete: O(N)
 * Space Complixty: O(N)
 * Used Language: Python
+* Usage:
+    * Hash tables are implemented where:
+        * constant time lookup and insertion is required
+        * cryptographic applications
+        * indexing data is required
 """
 hashTable = [[]] * 10
 def checkPrime(n):
