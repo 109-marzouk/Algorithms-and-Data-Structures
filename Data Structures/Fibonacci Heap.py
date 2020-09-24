@@ -6,5 +6,5 @@
 * Time Complixty:
 * Space Complixty: O(N)
 * Used Language: Python
-* Usage:
+* Usage: To improve the asymptotic running time of Dijkstra's algorithm.
 """
